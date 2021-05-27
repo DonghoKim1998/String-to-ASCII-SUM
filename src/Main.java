@@ -14,9 +14,12 @@ public class Main {
 	
 	int hashFunction(String key) {
 		int output = 0;
+		int M = 17;
 		
 		for(int i=0;i<input.length(); i++)
 			output += key.charAt(i);
+		
+		output %= M;
 		
 		return output;
 	}
