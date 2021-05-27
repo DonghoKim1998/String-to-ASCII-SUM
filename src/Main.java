@@ -19,7 +19,7 @@ public class Main {
 		for(int i=0;i<input.length(); i++)
 			output += key.charAt(i);
 		
-		output %= M;
+		output = output % M;
 		
 		return output;
 	}
